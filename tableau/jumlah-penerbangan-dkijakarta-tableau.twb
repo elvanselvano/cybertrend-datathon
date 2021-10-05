@@ -1,0 +1,420 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20213.21.0917.1006                               -->
+<workbook original-version='18.1' source-build='2021.3.1 (20213.21.0917.1006)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='jumlah_penerbangan_category' inline='true' name='federated.0w9jjzl09mf04r1dsi2oe1xy6fsj' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='jumlah_penerbangan_category' name='textscan.0nkusvq1l1o1i91evk4c10711101'>
+            <connection class='textscan' directory='C:/Darnell Kikoo/cybertrend-datathon/clean_data/pariwisata' filename='jumlah_penerbangan_category.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0nkusvq1l1o1i91evk4c10711101' name='jumlah_penerbangan_category.csv' table='[jumlah_penerbangan_category#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='jumlah' ordinal='0' />
+            <column datatype='string' name='category' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0nkusvq1l1o1i91evk4c10711101' name='jumlah_penerbangan_category.csv' table='[jumlah_penerbangan_category#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='jumlah' ordinal='0' />
+            <column datatype='string' name='category' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[jumlah_penerbangan_category.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>jumlah</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[jumlah]</local-name>
+            <parent-name>[jumlah_penerbangan_category.csv]</parent-name>
+            <remote-alias>jumlah</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jumlah_penerbangan_category.csv_9FE13E189EF5462DA9934BD98AC95AD6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[category]</local-name>
+            <parent-name>[jumlah_penerbangan_category.csv]</parent-name>
+            <remote-alias>category</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jumlah_penerbangan_category.csv_9FE13E189EF5462DA9934BD98AC95AD6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='jumlah_penerbangan_category.csv' datatype='table' name='[__tableau_internal_object_id__].[jumlah_penerbangan_category.csv_9FE13E189EF5462DA9934BD98AC95AD6]' role='measure' type='quantitative' />
+      <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+      <column caption='Jumlah' datatype='integer' name='[jumlah]' role='measure' type='quantitative' />
+      <column-instance column='[category]' derivation='None' name='[none:category:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:category:nk]' palette='brown_10_0' type='palette'>
+            <map to='#9f3632'>
+              <bucket>&quot;Total&quot;</bucket>
+            </map>
+            <map to='#d18954'>
+              <bucket>&quot;Internasional&quot;</bucket>
+            </map>
+            <map to='#eedbbd'>
+              <bucket>&quot;Domestik&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Indonesia&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='jumlah_penerbangan_category.csv' id='jumlah_penerbangan_category.csv_9FE13E189EF5462DA9934BD98AC95AD6'>
+            <properties context=''>
+              <relation connection='textscan.0nkusvq1l1o1i91evk4c10711101' name='jumlah_penerbangan_category.csv' table='[jumlah_penerbangan_category#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='jumlah' ordinal='0' />
+                  <column datatype='string' name='category' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='jumlah_penerbangan_category' name='federated.0w9jjzl09mf04r1dsi2oe1xy6fsj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0w9jjzl09mf04r1dsi2oe1xy6fsj'>
+            <_.fcp.ObjectModelTableType.false...column caption='jumlah_penerbangan_category.csv' datatype='integer' name='[__tableau_internal_object_id__].[jumlah_penerbangan_category.csv_9FE13E189EF5462DA9934BD98AC95AD6]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[jumlah_penerbangan_category.csv_9FE13E189EF5462DA9934BD98AC95AD6]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:jumlah_penerbangan_category.csv_9FE13E189EF5462DA9934BD98AC95AD6:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='jumlah_penerbangan_category.csv' datatype='table' name='[__tableau_internal_object_id__].[jumlah_penerbangan_category.csv_9FE13E189EF5462DA9934BD98AC95AD6]' role='measure' type='quantitative' />
+            <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+            <column caption='Jumlah' datatype='integer' name='[jumlah]' role='measure' type='quantitative' />
+            <column-instance column='[category]' derivation='None' name='[none:category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[jumlah]' derivation='Sum' name='[pcto:sum:jumlah:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[jumlah]' derivation='Sum' name='[sum:jumlah:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0w9jjzl09mf04r1dsi2oe1xy6fsj].[none:category:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:category:nk]' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Total&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0w9jjzl09mf04r1dsi2oe1xy6fsj].[none:category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.0w9jjzl09mf04r1dsi2oe1xy6fsj].[__tableau_internal_object_id__].[cnt:jumlah_penerbangan_category.csv_9FE13E189EF5462DA9934BD98AC95AD6:qk]' field-type='quantitative' scope='rows' type='space' />
+            <format attr='display' class='0' field='[federated.0w9jjzl09mf04r1dsi2oe1xy6fsj].[__tableau_internal_object_id__].[cnt:jumlah_penerbangan_category.csv_9FE13E189EF5462DA9934BD98AC95AD6:qk]' scope='rows' value='false' />
+            <encoding attr='space' class='1' domain-expand='false' field='[federated.0w9jjzl09mf04r1dsi2oe1xy6fsj].[__tableau_internal_object_id__].[cnt:jumlah_penerbangan_category.csv_9FE13E189EF5462DA9934BD98AC95AD6:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='display' class='1' field='[federated.0w9jjzl09mf04r1dsi2oe1xy6fsj].[__tableau_internal_object_id__].[cnt:jumlah_penerbangan_category.csv_9FE13E189EF5462DA9934BD98AC95AD6:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' value='649' />
+            <format attr='color' value='#000000' />
+            <format attr='font-size' value='12' />
+            <format attr='font-size' data-class='total' scope='cols' value='12' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+            <format attr='border-width' data-class='total' scope='rows' value='0' />
+            <format attr='border-style' data-class='total' scope='rows' value='none' />
+            <format attr='background-color' field='[federated.0w9jjzl09mf04r1dsi2oe1xy6fsj].[none:category:nk]' value='#ffffff' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' scope='cols' value='9' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+            <format attr='border-width' data-class='total' scope='rows' value='0' />
+            <format attr='border-style' data-class='total' scope='rows' value='none' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='div-level' scope='rows' value='1' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#ffffff' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0w9jjzl09mf04r1dsi2oe1xy6fsj].[__tableau_internal_object_id__].[cnt:jumlah_penerbangan_category.csv_9FE13E189EF5462DA9934BD98AC95AD6:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0w9jjzl09mf04r1dsi2oe1xy6fsj].[none:category:nk]' />
+              <wedge-size column='[federated.0w9jjzl09mf04r1dsi2oe1xy6fsj].[sum:jumlah:qk]' />
+              <text column='[federated.0w9jjzl09mf04r1dsi2oe1xy6fsj].[none:category:nk]' />
+              <text column='[federated.0w9jjzl09mf04r1dsi2oe1xy6fsj].[pcto:sum:jumlah:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-transparency' value='255' />
+                <format attr='mark-color' value='#ffffff' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0w9jjzl09mf04r1dsi2oe1xy6fsj].[__tableau_internal_object_id__].[cnt:jumlah_penerbangan_category.csv_9FE13E189EF5462DA9934BD98AC95AD6:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.0w9jjzl09mf04r1dsi2oe1xy6fsj].[sum:jumlah:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#000000' />
+                <format attr='font-size' value='20' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='0.69165748357772827' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#ffffff' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0w9jjzl09mf04r1dsi2oe1xy6fsj].[__tableau_internal_object_id__].[cnt:jumlah_penerbangan_category.csv_9FE13E189EF5462DA9934BD98AC95AD6:qk] + [federated.0w9jjzl09mf04r1dsi2oe1xy6fsj].[__tableau_internal_object_id__].[cnt:jumlah_penerbangan_category.csv_9FE13E189EF5462DA9934BD98AC95AD6:qk])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{766210DE-D519-425C-8114-542060CE9C77}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='5' param='[federated.0w9jjzl09mf04r1dsi2oe1xy6fsj].[none:category:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0w9jjzl09mf04r1dsi2oe1xy6fsj].[none:category:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{BF011F74-F9BC-4F2A-A4CB-38D868127642}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
