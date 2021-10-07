@@ -1,0 +1,430 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20213.21.0917.1006                               -->
+<workbook original-version='18.1' source-build='2021.3.1 (20213.21.0917.1006)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='wisatawan-ke-dki-jakarta-8-tempat-20122020' inline='true' name='federated.14aq7qu1kgoday1c7ys4s0jt8ijt' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='wisatawan-ke-dki-jakarta-8-tempat-20122020' name='textscan.1omdccd0orz1bf1d4cgji0j8jyle'>
+            <connection class='textscan' directory='C:/Darnell Kikoo/cybertrend-datathon/clean_data/pariwisata' filename='wisatawan-ke-dki-jakarta-8-tempat-20122020.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1omdccd0orz1bf1d4cgji0j8jyle' name='wisatawan-ke-dki-jakarta-8-tempat-20122020.csv' table='[wisatawan-ke-dki-jakarta-8-tempat-20122020#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Objek Wisata' ordinal='0' />
+            <column datatype='integer' name='jumlah_wisatawan_di_dki' ordinal='1' />
+            <column datatype='date' date-parse-format='yyyy' name='tahun' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1omdccd0orz1bf1d4cgji0j8jyle' name='wisatawan-ke-dki-jakarta-8-tempat-20122020.csv' table='[wisatawan-ke-dki-jakarta-8-tempat-20122020#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Objek Wisata' ordinal='0' />
+            <column datatype='integer' name='jumlah_wisatawan_di_dki' ordinal='1' />
+            <column datatype='date' date-parse-format='yyyy' name='tahun' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[wisatawan-ke-dki-jakarta-8-tempat-20122020.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Objek Wisata</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Objek Wisata]</local-name>
+            <parent-name>[wisatawan-ke-dki-jakarta-8-tempat-20122020.csv]</parent-name>
+            <remote-alias>Objek Wisata</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>jumlah_wisatawan_di_dki</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[jumlah_wisatawan_di_dki]</local-name>
+            <parent-name>[wisatawan-ke-dki-jakarta-8-tempat-20122020.csv]</parent-name>
+            <remote-alias>jumlah_wisatawan_di_dki</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tahun</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[tahun]</local-name>
+            <parent-name>[wisatawan-ke-dki-jakarta-8-tempat-20122020.csv]</parent-name>
+            <remote-alias>tahun</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Objek Wisata]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='wisatawan-ke-dki-jakarta-8-tempat-20122020.csv' datatype='table' name='[__tableau_internal_object_id__].[wisatawan-ke-dki-jakarta-8-tempat-20122020.csv_33CBB63A1C394D7FB234107320E5954F]' role='measure' type='quantitative' />
+      <column caption='Jumlah Wisatawan Di Dki' datatype='integer' name='[jumlah_wisatawan_di_dki]' role='measure' type='quantitative' />
+      <column caption='Tahun' datatype='date' name='[tahun]' role='dimension' type='quantitative' />
+      <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Objek Wisata]' derivation='None' name='[none:Objek Wisata:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Objek Wisata:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Monumen Nasional&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Pelabuhan Sunda Kelapa&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Museum Sejarah Jakarta&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Taman Impian Jaya Ancol&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Museum Satria Mandala&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Ragunan&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Museum Nasional&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;TMII&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Indonesia&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <default-sorts>
+        <manual-sort column='[none:Forecast Indicator:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;Actual&quot;</bucket>
+            <bucket>&quot;Estimate&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='wisatawan-ke-dki-jakarta-8-tempat-20122020.csv' id='wisatawan-ke-dki-jakarta-8-tempat-20122020.csv_33CBB63A1C394D7FB234107320E5954F'>
+            <properties context=''>
+              <relation connection='textscan.1omdccd0orz1bf1d4cgji0j8jyle' name='wisatawan-ke-dki-jakarta-8-tempat-20122020.csv' table='[wisatawan-ke-dki-jakarta-8-tempat-20122020#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Objek Wisata' ordinal='0' />
+                  <column datatype='integer' name='jumlah_wisatawan_di_dki' ordinal='1' />
+                  <column datatype='date' date-parse-format='yyyy' name='tahun' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Jumlah Wisatawan ke Tempat Wisata DKI Jakarta 2012-2020</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='wisatawan-ke-dki-jakarta-8-tempat-20122020' name='federated.14aq7qu1kgoday1c7ys4s0jt8ijt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14aq7qu1kgoday1c7ys4s0jt8ijt'>
+            <column datatype='string' name='[Objek Wisata]' role='dimension' type='nominal' />
+            <column caption='Jumlah Wisatawan Di Dki' datatype='integer' name='[jumlah_wisatawan_di_dki]' role='measure' type='quantitative' />
+            <column-instance column='[Objek Wisata]' derivation='None' name='[none:Objek Wisata:nk]' pivot='key' type='nominal' />
+            <column-instance column='[jumlah_wisatawan_di_dki]' derivation='Sum' name='[sum:jumlah_wisatawan_di_dki:qk]' pivot='key' type='quantitative' />
+            <column caption='Tahun' datatype='date' name='[tahun]' role='dimension' type='quantitative' />
+            <column-instance column='[tahun]' derivation='Year-Trunc' name='[tyr:tahun:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.14aq7qu1kgoday1c7ys4s0jt8ijt].[none:Objek Wisata:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Objek Wisata:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:Objek Wisata:nk]' member='&quot;Museum Nasional&quot;' />
+                <groupfilter function='member' level='[none:Objek Wisata:nk]' member='&quot;Museum Satria Mandala&quot;' />
+                <groupfilter function='member' level='[none:Objek Wisata:nk]' member='&quot;Pelabuhan Sunda Kelapa&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.14aq7qu1kgoday1c7ys4s0jt8ijt].[none:Objek Wisata:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.14aq7qu1kgoday1c7ys4s0jt8ijt].[tyr:tahun:qk]' scope='cols' value='Year' />
+            <format attr='title' class='0' field='[federated.14aq7qu1kgoday1c7ys4s0jt8ijt].[sum:jumlah_wisatawan_di_dki:qk]' scope='rows' value='Jumlah Wisatawan' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='7' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.14aq7qu1kgoday1c7ys4s0jt8ijt].[none:Objek Wisata:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#00000000' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.14aq7qu1kgoday1c7ys4s0jt8ijt].[sum:jumlah_wisatawan_di_dki:qk]</rows>
+        <cols>[federated.14aq7qu1kgoday1c7ys4s0jt8ijt].[tyr:tahun:qk]</cols>
+      </table>
+      <simple-id uuid='{7414A981-801F-4D4E-AE27-ED6211AFF5CC}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='300'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='7' param='[federated.14aq7qu1kgoday1c7ys4s0jt8ijt].[none:Objek Wisata:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.14aq7qu1kgoday1c7ys4s0jt8ijt].[:Measure Names]</field>
+            <field>[federated.14aq7qu1kgoday1c7ys4s0jt8ijt].[none:Objek Wisata:nk]</field>
+            <field>[federated.14aq7qu1kgoday1c7ys4s0jt8ijt].[tyr:tahun:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{5E63A3D0-C02C-46B6-8AA0-F99F641363DC}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
