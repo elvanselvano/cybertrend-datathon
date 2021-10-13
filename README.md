@@ -1,113 +1,53 @@
-<p align="center">
-  <a href="" rel="noopener">
- <img src="https://i.imgur.com/AZ2iWek.png" alt="Project logo"></a>
-</p>
-<h3 align="center">Project Title</h3>
-
-<div align="center">
-
-  [![Hackathon](https://img.shields.io/badge/hackathon-name-orange.svg)](http://hackathon.url.com) 
-  [![Status](https://img.shields.io/badge/status-active-success.svg)]() 
-  [![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)
-  [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
-  [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.md)
-
-</div>
-
----
-
-<p align="center"> Few lines describing your project.
-    <br> 
-</p>
+<h1 align="center">RE-WONDERFUL INDONESIA</h1>
+<p align="center"> Analisa situasi terkini dan rekomendasi kebijakan untuk menghidupkan kembali industri pariwisata Indonesia.</p>
 
 ## 📝 Table of Contents
-- [Problem Statement](#problem_statement)
-- [Idea / Solution](#idea)
-- [Dependencies / Limitations](#limitations)
-- [Future Scope](#future_scope)
-- [Setting up a local environment](#getting_started)
-- [Usage](#usage)
+- [Insights](#idea)
 - [Technology Stack](#tech_stack)
-- [Contributing](../CONTRIBUTING.md)
 - [Authors](#authors)
 - [Acknowledgments](#acknowledgments)
 
-## 🧐 Problem Statement <a name = "problem_statement"></a>
-It is useful to design and follow a specific format when writing a problem statement. While there are several options
-for doing this, the following is a simple and straightforward template often used in Business Analysis to maintain
-focus on defining the problem.
+## 💡 Insights <a name = "idea"></a>
+- Industri pariwisata terpukul berat secara finansial ditandai penurunan pajak dari sektor yang berkaitan dengan pariwisata mencapai -50.36%.
+- Wisatawan mancanegara membutuhkan waktu yang lama untuk dapat pulih ke kondisi semula dikarenakan pembatasan perjalanan antar negara dan kondisi pandemi.
+- Pemulihan industri pariwisata akan ditopang oleh wisatawan domestik karena pemulihan demand sangat cepat seperti yang terjadi di DKI Jakarta pada Oktober 2020 saat dilakukan pelonggaran pembatasan serta menyusun 96.09% dari total penumpang pesawat di tahun 2021.
+- Timbul tren baru dalam berwisata yaitu staycation ditandai dengan meningkatnya lama menginap wisatawan domestik yang meningkat 61% di tahun 2020 dibanding tahun 2019.
 
-- IDEAL: This section is used to describe the desired or “to be” state of the process or product. At large, this section 
-should illustrate what the expected environment would look like once the solution is implemented.
-- REALITY: This section is used to describe the current or “as is” state of the process or product. 
-- CONSEQUENCES: This section is used to describe the impacts on the business if the problem is not fixed or improved upon.
-This includes costs associated with loss of money, time, productivity, competitive advantage, and so forth.
+For detailed insights and visualizations, check out the final report [here](https://github.com/elvanselvano/cybertrend-datathon/blob/main/deliverables/LinearRegression_PH.pptx).
 
-Following this format will result in a workable document that can be used to understand the problem and elicit
-requirements that will lead to a winning solution. 
 
-## 💡 Idea / Solution <a name = "idea"></a>
-This section is used to describe potential solutions. 
-
-Once the ideal, reality, and consequences sections have been 
-completed, and understood, it becomes easier to provide a solution for solving the problem.
-
-## ⛓️ Dependencies / Limitations <a name = "limitations"></a>
-- What are the dependencies of your project?
-- Describe each limitation in detailed but concise terms
-- Explain why each limitation exists
-- Provide the reasons why each limitation could not be overcome using the method(s) chosen to acquire.
-- Assess the impact of each limitation in relation to the overall findings and conclusions of your project, and if 
-appropriate, describe how these limitations could point to the need for further research.
-
-## 🚀 Future Scope <a name = "future_scope"></a>
-Write about what you could not develop during the course of the Hackathon; and about what your project can achieve 
-in the future.
-
-## 🏁 Getting Started <a name = "getting_started"></a>
-These instructions will get you a copy of the project up and running on your local machine for development 
-and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
-
-### Prerequisites
-
-What things you need to install the software and how to install them.
-
-```
-Give examples
-```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running.
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-## 🎈 Usage <a name="usage"></a>
-Add notes about how to use the system.
 
 ## ⛏️ Built With <a name = "tech_stack"></a>
-- [MongoDB](https://www.mongodb.com/) - Database
-- [Express](https://expressjs.com/) - Server Framework
-- [VueJs](https://vuejs.org/) - Web Framework
-- [NodeJs](https://nodejs.org/en/) - Server Environment
+- [Google Colab](https://colab.research.google.com/) - Data Preprocessing
+- [Prophet](https://facebook.github.io/prophet/) - Time Series Forecasting
+- [Tableau](https://www.tableau.com/) - Dashboard and Visualizations
 
 ## ✍️ Authors <a name = "authors"></a>
-- [@kylelobo](https://github.com/kylelobo) - Idea & Initial work
-
-See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) 
-who participated in this project.
+- [@Jonathan-Kris](https://github.com/Jonathan-Kris) 
+- [@elvanselvano](https://github.com/elvanselvano) 
+- [@admantiumblack](https://github.com/admantiumblack) 
+- [@darnellkikoo](https://github.com/darnellkikoo) 
 
 ## 🎉 Acknowledgments <a name = "acknowledgments"></a>
-- Hat tip to anyone whose code was used
-- Inspiration
-- References
+This project uses open-sourced datasets listed below:
+- Penerimaan Devisa Sektor Pariwisata Indonesia 2015-2020
+https://www.bps.go.id/indicator/16/1160/1/jumlah-devisa-sektor-pariwisata.html 
+- Jumlah Penumpang Internasional di Bandara Soekarno-Hatta 2020-2021
+https://www.bps.go.id/indicator/17/66/3/jumlah-penumpang-pesawat-di-bandara-utama.html  
+- Jumlah Penumpang Domestik di Bandara Soekarno-Hatta 2020-2021
+https://www.bps.go.id/indicator/17/66/3/jumlah-penumpang-pesawat-di-bandara-utama.html 
+- Jumlah Kunjungan Wisatawan Mancanegara dan Wisatawan Nasional ke Objek Wisata Unggulan di DKI Jakarta Tahun 2020
+https://jakarta.bps.go.id/indicator/16/777/1/jumlah-kunjungan-wisatawan-ke-obyek-wisata-unggulan-menurut-lokasi-di-dki-jakarta.html
+- GeoMap Okupansi Hotel di Indonesia
+https://www.bps.go.id/indicator/16/282/1/tingkat-penghunian-kamar-hotel.html
+- Persentase Penumpang Pesawat Nasional Vs. Mancanegara 2020
+https://www.bps.go.id/indicator/17/66/1/jumlah-penumpang-pesawat-di-bandara-utama.html
+- Pendapatan Pajak Sektor Pariwisata di Jakarta Barat Tahun 2019 dan 2020
+https://jakbarkota.bps.go.id/indicator/101/114/1/rencana-dan-realisasi-pajak.html
+- Rata-rata lama menginap turis tahunan
+https://jakarta.bps.go.id/indicator/16/233/1/rata-rata-lama-menginap-tamu-asing-dan-tamu-domestik-menurut-bulan-hari-.html
+- Persentase Penumpang Pesawat Internasional dan Nasional 2019-2021
+https://www.bps.go.id/indicator/17/66/3/jumlah-penumpang-pesawat-di-bandara-utama.html
+- Prediksi Jumlah kasus Positif Covid-19 di Indonesia
+https://corona.jakarta.go.id/en
+
